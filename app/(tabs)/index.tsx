@@ -1,11 +1,14 @@
 import { Image } from 'expo-image';
-import { Platform, StyleSheet,Text } from 'react-native';
+import { Platform, StyleSheet } from 'react-native';
 
 import { HelloWave } from '@/components/hello-wave';
 import ParallaxScrollView from '@/components/parallax-scroll-view';
 import { ThemedText } from '@/components/themed-text';
 import { ThemedView } from '@/components/themed-view';
 import { Link } from 'expo-router';
+import { Button } from '@/components/ui/button';
+import { Text } from '@/components/ui/text';
+
 
 export default function HomeScreen() {
   return (
@@ -19,7 +22,9 @@ export default function HomeScreen() {
       }>
       <ThemedView style={styles.titleContainer}>
         {/* <ThemedText  type="title"></ThemedText> */}
-        <Text className='text-red-500'>Welcome! asdasdas</Text>
+         <Button>
+          <Text>Button</Text>
+        </Button>
         <HelloWave />
       </ThemedView>
       <ThemedView style={styles.stepContainer}>
